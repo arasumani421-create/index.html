@@ -195,25 +195,31 @@ function launchHearts() {
         setTimeout(() => heart.remove(), 5000);
     }, 200);
 }
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Amritaa 💙</title>
+</head>
 
-</script>
-<audio autoplay loop muted id="bgMusic">
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
+<body style="text-align:center; margin-top:50px;">
+
+<h1>For You 💙</h1>
 
 <audio id="bgMusic">
   <source src="music.mp3" type="audio/mpeg">
 </audio>
 
-<div style="text-align:center; margin-top: 50px;">
-  <button onclick="playMusic()" style="padding:15px 25px; font-size:18px; border:none; border-radius:10px; background-color:#007bff; color:white;">
-    Tap for Surprise 💙
-  </button>
-</div>
+<button onclick="playMusic()" style="padding:15px 25px; font-size:18px; border:none; border-radius:10px; background-color:#007bff; color:white;">
+  Tap for Surprise 💙
+</button>
 
 <script>
 function playMusic() {
-  document.getElementById("bgMusic").play();
+  var audio = document.getElementById("bgMusic");
+  audio.play();
 }
 </script>
+
+</body>
+</html>
 </body>
