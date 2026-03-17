@@ -197,5 +197,14 @@ function launchHearts() {
 }
 
 </script>
+<audio autoplay loop muted id="bgMusic">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
 
+<script>
+document.body.addEventListener('click', function() {
+  document.getElementById("bgMusic").muted = false;
+  document.getElementById("bgMusic").play();
+});
+</script>
 </body>
