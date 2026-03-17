@@ -201,10 +201,19 @@ function launchHearts() {
   <source src="music.mp3" type="audio/mpeg">
 </audio>
 
+<audio id="bgMusic">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div style="text-align:center; margin-top: 50px;">
+  <button onclick="playMusic()" style="padding:15px 25px; font-size:18px; border:none; border-radius:10px; background-color:#007bff; color:white;">
+    Tap for Surprise 💙
+  </button>
+</div>
+
 <script>
-document.body.addEventListener('click', function() {
-  document.getElementById("bgMusic").muted = false;
+function playMusic() {
   document.getElementById("bgMusic").play();
-});
+}
 </script>
 </body>
